@@ -5,7 +5,9 @@
   "author": "Lucas Souza",
   "license": "MIT",
   "scripts": {
-    "server": "lite-server --baseDir=src",
+    "server": "lite-server --baseDir=dist",
+    "compile": "tsc",
+    "watch": "tsc -w",
     "start": "concurrently \"yarn run watch\" \"yarn run server\""
   },
   "devDependencies": {
